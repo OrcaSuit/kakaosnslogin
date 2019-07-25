@@ -1,3 +1,4 @@
+/*
 package android.collab.myapplication;
 
 import android.app.Activity;
@@ -17,15 +18,19 @@ import com.kakao.util.helper.log.Logger;
 
 import java.util.Map;
 
+*/
 /**
  * 유효한 세션이 있다는 검증 후
  * me를 호출하여 가입 여부에 따라 가입 페이지를 그리던지 Main 페이지로 이동 시킨다.
- */
+ *//*
+
 public class KakaoSignupActivity extends Activity {
-    /**
+    */
+/**
      * Main으로 넘길지 가입 페이지를 그릴지 판단하기 위해 me를 호출한다.
      * @param savedInstanceState 기존 session 정보가 저장된 객체
-     */
+     *//*
+
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,9 +69,11 @@ public class KakaoSignupActivity extends Activity {
         }, properties);
     }
 
-    /**
+    */
+/**
      * 사용자의 상태를 알아 보기 위해 me API 호출을 한다.
-     */
+     *//*
+
     protected void requestMe() {
         UserManagement.getInstance().me(new MeV2ResponseCallback() {
             @Override
@@ -105,4 +112,4 @@ public class KakaoSignupActivity extends Activity {
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
-}
+}*/

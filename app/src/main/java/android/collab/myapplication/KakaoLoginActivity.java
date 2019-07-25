@@ -1,8 +1,7 @@
 package android.collab.myapplication;
 
 import android.app.Activity;
-import android.collab.myapplication.lib.MyToast;
-import android.collab.myapplication.ui.login.LoginActivity;
+import android.collab.myapplication.ui.login.SignupActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -61,7 +60,7 @@ public class KakaoLoginActivity extends Activity {
     }
 
     protected void redirectSignupActivity() {
-        final Intent intent = new Intent(this, KakaoSignupActivity.class);
+        final Intent intent = new Intent(this, SignupActivity.class);
         startActivity(intent);
         finish();
     }
